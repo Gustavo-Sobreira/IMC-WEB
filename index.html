@@ -18,17 +18,19 @@
         <header>
 
             <h1 class="titulo">IMC - Calc</h1>
+            <p class="linha"></p>
 
         </header>
  
         <main>
+ 
+            <div class="espacoGeral">
 
-            <form class="espacoGeral">
-
-                <div class="a">
+                <div class="cadastrado" id="defNome">
 
                     <p class="identificador">Seu nome</p>
-                    <input type="text" id="nome" placeholder="Zezin">
+
+                    <input type="name" name="nome" id="nome" required>
                     <label for="nome">Zezin</label>
     
                 </div>
@@ -37,42 +39,54 @@
 
                     <p class="identificador">Sexo</p>
 
-                    <input type="radio" name="sexo" id="Masc" value="M">
-                    <label for="Masc">Masculino</label> 
-                    <input type="radio" name="sexo" id="Femi" value="F"> <label for="Femi">Feminino</label>
+                    <input type="radio" name="sexo" id="m" required>
+                    <label for="m">Masculino</label>
+
+                    <input type="radio" name="sexo" id="f" required> 
+                    <label for="f">Feminino</label>
                     
                 </div>
     
                
     
-                <div class="a">
+                <div class="cadastrado" id="defPeso">
     
                     <p class="identificador">Peso</p>
-                    <input type="number" name="peso" id="peso" placeholder="90Kg">
+                    <input type="number" name="peso" id="peso" required> 
+                    <label for="peso">90</label>
     
                 </div>
     
-                <div class="a">
+                <div class="cadastrado" id="defAltura">
     
                     <p class="identificador">Altura</p>
-                    <input type="number" name="altura" id="altura" placeholder="1,80">
+                    <input type="number" name="altura" id="altura" required>
+                    <label for="altura">180</label>
                     
                 </div>
                 
                 <button id="btnCalcular">Calcular</button>
                 
-            </form>
+            </div>
 
         </main>
 
         <footer class="espacoGeral exibirImc">
-            <p>Resultado</p>
-            <p>Faixa de peso:</p>
 
-            <button>Reiniciar</button>
+            <div class="resultado">
+
+                <p id="numImc">Resultado: 0.0</p>
+                <p id="saudeP">Faixa de peso: ---</p>
+
+            </div>         
+
+            <button id="btnReiniciar">Reiniciar</button>
+
         </footer>
         
     </div>
     
+    <script src="JS/imc.js"></script>
+
 </body>
 </html>
