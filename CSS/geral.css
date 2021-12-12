@@ -1,40 +1,4 @@
-/*Como a página é menor vou estar utilizando apenas 1 css para o estilo*/
-
-body{
-
-    background-color:white;
-
-}
-
-/*Aqui mudará o tamanho da aplicação como um todo*/
-.corpo{
-
-    background-color: rgba(176, 176, 216, 0.699);
-
-    margin-top: 10%;
-    margin-left: 30%;
-    margin-right: 30%;
-
-
-    border-radius: 10px;
-    border: 2px solid rgb(147, 147, 238);  
-
-
-}
-
-/*Aqui fica responsável pelo título da página*/
-.titulo{
-
-    padding-top: 5%;
-    padding-bottom: 5%;
-    color:rgb(13, 98, 209);
-
-    font-family: Arial;
-    font-size:36px;
-    text-align:center;
-
-    border: none;
-}
+/*Aqui ficam os scripts que são os mesmos para celulares e computadores*/
 .linha{
 
     width: 80%;
@@ -42,6 +6,20 @@ body{
     margin-left: 10%;
     background: linear-gradient(45deg,rgba(0, 0, 255, 0),blue,rgba(0, 0, 255, 0));
 
+}
+
+#tituloIMC{
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color:rgb(13, 98, 209);
+
+    font-family: Arial, Helvetica;
+    font-size:36px;
+    text-align:center;
+
+    border: none;
+    
 }
 
 /*Para que todas perguntas fiquem de forma padrão criarei esta class*/
@@ -61,7 +39,7 @@ body{
     
     color:rgba(0, 0, 0, 0.589);
 
-    margin-top:4%;
+    margin-top:10%;
     margin-bottom:1%;
 
 }

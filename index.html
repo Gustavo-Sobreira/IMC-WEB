@@ -6,34 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta http-equiv="refresh" content="">
+
     <!--LINKS-->
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/geral.css">
+    <link rel="stylesheet" href="CSS/bases.css">
+
+    <!--PARA CELULARES-->
+    <link rel="stylesheet" href="CSS/celular/cabecalho.css">
+    <link rel="stylesheet" href="CSS/celular/imc.css">
+
+    <link rel="stylesheet" href="CSS/cabecalho.css">
 
 
     <title>Calculadora IMC</title>
 </head>
 <body>
-    <div class="corpo">
-        <header>
 
-            <h1 class="titulo">IMC - Calc</h1>
-            <p class="linha"></p>
+    <header>
 
-        </header>
- 
+        <h1 class="clinica">Clínica Castro</h1>
+
+        <div class="horarios">
+
+            <h2>Segunda a Sábado</h2=>
+            <h3>de 07hr ás 18hr</h3>
+
+        </div>
+
+        <div class="contato">
+
+            <h3>Dúvidas Ligue:</h3>
+            <h4>(32) 99962-5888</h4>
+
+        </div>
+
+    </header>
+
+    <div class="corpoCalc">
+
         <main>
+
+            <h1 id="tituloIMC">IMC - Calc</h1>
+            <p class="linha"></p>
  
             <div class="espacoGeral">
-
-                <div class="cadastrado" id="defNome">
-
-                    <p class="identificador">Seu nome</p>
-
-                    <input type="name" name="nome" id="nome" required>
-                    <label for="nome">Zezin</label>
-    
-                </div>
 
                 <div id="definirSexo">
 
@@ -48,10 +66,10 @@
                 </div>
     
                
-    
+<!--Tenho que colocar o peso aceitar kg com vírgula-->
                 <div class="cadastrado" id="defPeso">
     
-                    <p class="identificador">Peso</p>
+                    <p class="identificador">Peso (ex: 65,5)</p>
                     <input type="number" name="peso" id="peso" required> 
                     <label for="peso">90</label>
     
@@ -59,7 +77,7 @@
     
                 <div class="cadastrado" id="defAltura">
     
-                    <p class="identificador">Altura</p>
+                    <p class="identificador">Altura (ex: 1,75)</p>
                     <input type="number" name="altura" id="altura" required>
                     <label for="altura">180</label>
                     
